@@ -32,7 +32,7 @@ Value,StringValue,Description
 0x00000105,STATUS_MORE_ENTRIES,"Returned by enumeration APIs to indicate more
   information is available to successive calls."
 0x00000106,STATUS_NOT_ALL_ASSIGNED,"Indicates not all privileges or groups that are
-  referenced are assigned to the caller. This allows, for example, all
+  referenced are assigned to the caller. This allows for example all
   privileges to be disabled without having to know exactly which privileges are
   assigned."
 0x00000107,STATUS_SOME_NOT_MAPPED,"Some of the information to be translated has not been
@@ -51,7 +51,7 @@ Value,StringValue,Description
 0x0000010D,STATUS_NO_QUOTAS_FOR_ACCOUNT,"{No Quotas} No system quota limits are specifically
   set for this account."
 0x0000010E,STATUS_PRIMARY_TRANSPORT_CONNECT_FAILED,"{Connect Failure on Primary Transport} An attempt was
-  made to connect to the remote server %hs on the primary transport, but the
+  made to connect to the remote server %hs on the primary transport but the
   connection failed. The computer WAS able to connect on a secondary transport."
 0x00000110,STATUS_PAGE_FAULT_TRANSITION,The page fault was a transition fault.
 0x00000111,STATUS_PAGE_FAULT_DEMAND_ZERO,The page fault was a demand zero fault.
@@ -69,7 +69,7 @@ Value,StringValue,Description
 0x00000120,STATUS_TRANSLATION_COMPLETE,"The translator has translated these resources into the
   global space and no additional translations should be performed."
 0x00000121,STATUS_DS_MEMBERSHIP_EVALUATED_LOCALLY,"The directory service evaluated group memberships
-  locally, because it was unable to contact a global catalog server."
+  locally because it was unable to contact a global catalog server."
 0x00000122,STATUS_NOTHING_TO_TERMINATE,"A process being terminated has no threads to
   terminate."
 0x00000123,STATUS_PROCESS_NOT_IN_JOB,The specified process is not part of a job.
@@ -94,12 +94,12 @@ Value,StringValue,Description
 0xC0000467,STATUS_FILE_NOT_AVAILABLE,The file is temporarily unavailable.
 0xC0000480,STATUS_SHARE_UNAVAILABLE,The share is temporarily unavailable.
 0xC0000721,STATUS_CALLBACK_RETURNED_THREAD_AFFINITY,"A threadpool worker thread entered a callback at
-  thread affinity %p and exited at affinity %p.","This is unexpected, indicating that the callback
+  thread affinity %p and exited at affinity %p.","This is unexpected indicating that the callback
   missed restoring the priority."
 0x40000000,STATUS_OBJECT_NAME_EXISTS,"{Object Exists} An attempt was made to create an
   object but the object name already exists."
 0x40000001,STATUS_THREAD_WAS_SUSPENDED,"{Thread Suspended} A thread termination occurred while
-  the thread was suspended. The thread resumed, and termination proceeded."
+  the thread was suspended. The thread resumed and termination proceeded."
 0x40000002,STATUS_WORKING_SET_LIMIT_RANGE,"{Working Set Range Error} An attempt was made to set
   the working set minimum or maximum to values that are outside the allowable
   range."
@@ -109,28 +109,28 @@ Value,StringValue,Description
 0x40000004,STATUS_RXACT_STATE_CREATED,"This informational level status indicates that a
   specified registry subtree transaction state did not yet exist and had to be
   created."
-0x40000005,STATUS_SEGMENT_NOTIFICATION,"{Segment Load} A virtual DOS machine (VDM) is loading,
-  unloading, or moving an MS-DOS or Win16 program segment image. An exception
-  is raised so that a debugger can load, unload, or track symbols and
+0x40000005,STATUS_SEGMENT_NOTIFICATION,"{Segment Load} A virtual DOS machine (VDM) is loading
+  unloading or moving an MS-DOS or Win16 program segment image. An exception
+  is raised so that a debugger can load unload or track symbols and
   breakpoints within these 16-bit segments."
 0x40000006,STATUS_LOCAL_USER_SESSION_KEY,"{Local Session Key} A user session key was requested
   for a local remote procedure call (RPC) connection. The session key that is returned
   is a constant value and not unique to this connection."
 0x40000007,STATUS_BAD_CURRENT_DIRECTORY,"{Invalid Current Directory} The process cannot switch
   to the startup current directory %hs. Select OK to set the current directory
-  to %hs, or select CANCEL to exit."
+  to %hs or select CANCEL to exit."
 0x40000008,STATUS_SERIAL_MORE_WRITES,"{Serial IOCTL Complete} A serial I/O operation was
   completed by another write to a serial port. (The IOCTL_SERIAL_XOFF_COUNTER
   reached zero.)"
 0x40000009,STATUS_REGISTRY_RECOVERED,"{Registry Recovery} One of the files that contains the
   system registry data had to be recovered by using a log or alternate copy.
   The recovery was successful."
-0x4000000A,STATUS_FT_READ_RECOVERY_FROM_BACKUP,"{Redundant Read} To satisfy a read request, the
+0x4000000A,STATUS_FT_READ_RECOVERY_FROM_BACKUP,"{Redundant Read} To satisfy a read request the
   Windows NT operating system fault-tolerant file system successfully read the
   requested data from a redundant copy. This was done because the file system
   encountered a failure on a member of the fault-tolerant volume but was unable
   to reassign the failing area of the device."
-0x4000000B,STATUS_FT_WRITE_RECOVERY,"{Redundant Write} To satisfy a write request, the
+0x4000000B,STATUS_FT_WRITE_RECOVERY,"{Redundant Write} To satisfy a write request the
   Windows NT fault-tolerant file system successfully wrote a redundant copy of
   the information. This was done because the file system encountered a failure
   on a member of the fault-tolerant volume but was unable to reassign the
@@ -143,7 +143,7 @@ Value,StringValue,Description
   that returned is a NULL string."
 0x4000000E,STATUS_IMAGE_MACHINE_TYPE_MISMATCH,"{Machine Type Mismatch} The image file %hs is valid
   but is for a machine type other than the current machine. Select OK to
-  continue, or CANCEL to fail the DLL load."
+  continue or CANCEL to fail the DLL load."
 0x4000000F,STATUS_RECEIVE_PARTIAL,"{Partial Data Received} The network transport returned
   partial data to its client. The remaining data will be sent later."
 0x40000010,STATUS_RECEIVE_EXPEDITED,"{Expedited Data Received} The network transport
@@ -193,14 +193,14 @@ Value,StringValue,Description
 0x40000028,STATUS_WX86_CREATEWX86TIB,"An exception status code that is used by the Win32 x86
   emulation subsystem."
 0x40000029,STATUS_MP_PROCESSOR_MISMATCH,"The CPUs in this multiprocessor system are not all the
-  same revision level. To use all processors, the operating system restricts
+  same revision level. To use all processors the operating system restricts
   itself to the features of the least capable processor in the system. If problems
-  occur with this system, contact the CPU manufacturer to see if this mix of
+  occur with this system contact the CPU manufacturer to see if this mix of
   processors is supported."
 0x4000002A,STATUS_HIBERNATED,The system was put into hibernation.
 0x4000002B,STATUS_RESUME_HIBERNATION,The system was resumed from hibernation.
 0x4000002C,STATUS_FIRMWARE_UPDATED,"Windows has detected that the system firmware (BIOS)
-  was updated [previous firmware date = %2, current firmware date %3]."
+  was updated [previous firmware date = %2 current firmware date %3]."
 0x4000002D,STATUS_DRIVERS_LEAKING_LOCKED_PAGES,"A device driver is leaking locked I/O pages and is causing
   system degradation. The system has automatically enabled the tracking code to
   try and catch the culprit."
@@ -244,8 +244,8 @@ Value,StringValue,Description
   restart area."
 0x401B00EC,STATUS_VIDEO_DRIVER_DEBUG_REPORT_REQUEST,"{Display Driver Recovered From Failure} The %hs
   display driver has detected a failure and recovered from it. Some graphical
-  operations might have failed. The next time you restart the machine, a dialog
-  box appears, giving you an opportunity to upload data about this failure to
+  operations might have failed. The next time you restart the machine a dialog
+  box appears giving you an opportunity to upload data about this failure to
   Microsoft."
 0x401E000A,STATUS_GRAPHICS_PARTIAL_DATA_POPULATED,"The specified buffer is not big enough to contain the
   entire requested dataset. Partial data is populated up to the size of the
@@ -257,10 +257,10 @@ Value,StringValue,Description
   source/target."
 0x401E031E,STATUS_GRAPHICS_NO_PREFERRED_MODE,"The specified mode set does not specify a preference
   for one of its modes."
-0x401E034B,STATUS_GRAPHICS_DATASET_IS_EMPTY,"The specified dataset (for example, mode set,
-  frequency range set, descriptor set, or topology) is empty."
-0x401E034C,STATUS_GRAPHICS_NO_MORE_ELEMENTS_IN_DATASET,"The specified dataset (for example, mode set,
-  frequency range set, descriptor set, or topology) does not contain any more
+0x401E034B,STATUS_GRAPHICS_DATASET_IS_EMPTY,"The specified dataset (for example mode set
+  frequency range set descriptor set or topology) is empty."
+0x401E034C,STATUS_GRAPHICS_NO_MORE_ELEMENTS_IN_DATASET,"The specified dataset (for example mode set
+  frequency range set descriptor set or topology) does not contain any more
   elements."
 0x401E0351,STATUS_GRAPHICS_PATH_CONTENT_GEOMETRY_TRANSFORMATION_NOT_PINNED,"The specified content transformation is not pinned on
   the specified VidPN present path."
@@ -273,7 +273,7 @@ Value,StringValue,Description
 0x40230001,STATUS_NDIS_INDICATION_REQUIRED,"The request will be completed later by an NDIS status
   indication."
 0x80000001,STATUS_GUARD_PAGE_VIOLATION,"{EXCEPTION} Guard Page Exception A page of memory that
-  marks the end of a data structure, such as a stack or an array, has been
+  marks the end of a data structure such as a stack or an array has been
   accessed."
 0x80000002,STATUS_DATATYPE_MISALIGNMENT,"{EXCEPTION} Alignment Fault A data type misalignment
   was detected in a load or store instruction."
@@ -291,11 +291,11 @@ Value,StringValue,Description
 0x8000000B,STATUS_NO_INHERITANCE,"{Non-Inheritable ACL} An access control list (ACL)
   contains no components that can be inherited."
 0x8000000C,STATUS_GUID_SUBSTITUTION_MADE,"{GUID Substitution} During the translation of a
-  globally unique identifier (GUID) to a Windows security ID (SID), no
-  administratively defined GUID prefix was found. A substitute prefix was used,
-  which will not compromise system security. However, this might provide a more
+  globally unique identifier (GUID) to a Windows security ID (SID) no
+  administratively defined GUID prefix was found. A substitute prefix was used
+  which will not compromise system security. However this might provide a more
   restrictive access than intended."
-0x8000000D,STATUS_PARTIAL_COPY,"Because of protection conflicts, not all the requested
+0x8000000D,STATUS_PARTIAL_COPY,"Because of protection conflicts not all the requested
   bytes could be copied."
 0x8000000E,STATUS_DEVICE_PAPER_EMPTY,{Out of Paper} The printer is out of paper.
 0x8000000F,STATUS_DEVICE_POWERED_OFF,"{Device Power Is Off} The printer power has been
@@ -311,14 +311,14 @@ Value,StringValue,Description
 0x80000015,STATUS_INVALID_EA_FLAG,"{Invalid EA Flag} An invalid extended attribute (EA)
   flag was set."
 0x80000016,STATUS_VERIFY_REQUIRED,"{Verifying Disk} The media has changed and a verify
-  operation is in progress; therefore, no reads or writes can be performed to
-  the device, except those that are used in the verify operation."
+  operation is in progress; therefore no reads or writes can be performed to
+  the device except those that are used in the verify operation."
 0x80000017,STATUS_EXTRANEOUS_INFORMATION,"{Too Much Information} The specified access control
   list (ACL) contained more information than was expected."
 0x80000018,STATUS_RXACT_COMMIT_NECESSARY,"This warning level status indicates that the
-  transaction state already exists for the registry subtree, but that a
+  transaction state already exists for the registry subtree but that a
   transaction commit was previously aborted. The commit has NOT been completed
-  but has not been rolled back either; therefore, it can still be committed, if
+  but has not been rolled back either; therefore it can still be committed if
   needed."
 0x8000001A,STATUS_NO_MORE_ENTRIES,"{No More Entries} No more entries are available from
   an enumeration operation."
@@ -330,7 +330,7 @@ Value,StringValue,Description
   detected."
 0x80000020,STATUS_MEDIA_CHECK,{Media Changed} The media might have changed.
 0x80000021,STATUS_SETMARK_DETECTED,A tape access reached a set mark.
-0x80000022,STATUS_NO_DATA_DETECTED,"During a tape access, the end of the data written is
+0x80000022,STATUS_NO_DATA_DETECTED,"During a tape access the end of the data written is
   reached."
 0x80000023,STATUS_REDIRECTOR_HAS_OPEN_HANDLES,The redirector is in use and cannot be unloaded.
 0x80000024,STATUS_SERVER_HAS_OPEN_HANDLES,The server is in use and cannot be unloaded.
@@ -343,11 +343,11 @@ Value,StringValue,Description
 0x8000002A,STATUS_REGISTRY_HIVE_RECOVERED,"{Registry Hive Recovered} The registry hive (file):
   %hs was corrupted and it has been recovered. Some data might have been lost."
 0x8000002B,STATUS_DLL_MIGHT_BE_INSECURE,"The application is attempting to run executable code
-  from the module %hs. This might be insecure. An alternative, %hs, is
+  from the module %hs. This might be insecure. An alternative %hs is
   available. Should the application use the secure module %hs?"
 0x8000002C,STATUS_DLL_MIGHT_BE_INCOMPATIBLE,"The application is loading executable code from the
   module %hs. This is secure but might be incompatible with previous releases
-  of the operating system. An alternative, %hs, is available. Should the
+  of the operating system. An alternative %hs is available. Should the
   application use the secure module %hs?"
 0x8000002D,STATUS_STOPPED_ON_SYMLINK,"The create operation stopped after reaching a symbolic
   link."
@@ -416,7 +416,7 @@ Value,StringValue,Description
 0xC0000013,STATUS_NO_MEDIA_IN_DEVICE,"{No Disk} There is no disk in the drive. Insert a disk
   into drive %hs."
 0xC0000014,STATUS_UNRECOGNIZED_MEDIA,"{Unknown Disk Format} The disk in drive %hs is not
-  formatted properly. Check the disk, and reformat it, if needed."
+  formatted properly. Check the disk and reformat it if needed."
 0xC0000015,STATUS_NONEXISTENT_SECTOR,"{Sector Not Found} The specified sector does not
   exist."
 0xC0000016,STATUS_MORE_PROCESSING_REQUIRED,"{Still Busy} The specified I/O request packet (IRP)
@@ -503,9 +503,9 @@ Value,StringValue,Description
 0xC0000047,STATUS_SEMAPHORE_LIMIT_EXCEEDED,"An attempt was made to release a semaphore such that
   its maximum count would have been exceeded."
 0xC0000048,STATUS_PORT_ALREADY_SET,"An attempt was made to set the DebugPort or
-  ExceptionPort of a process, but a port already exists in the process, or an
+  ExceptionPort of a process but a port already exists in the process or an
   attempt was made to set the CompletionPort of a file but a port was already
-  set in the file, or an attempt was made to set the associated completion port
+  set in the file or an attempt was made to set the associated completion port
   of an ALPC port but it is already set."
 0xC0000049,STATUS_SECTION_NOT_IMAGE,"An attempt was made to query image information on a
   section that does not map an image."
@@ -514,7 +514,7 @@ Value,StringValue,Description
 0xC000004B,STATUS_THREAD_IS_TERMINATING,"An attempt was made to suspend a thread that has begun
   termination."
 0xC000004C,STATUS_BAD_WORKING_SET_LIMIT,"An attempt was made to set the working set limit to an
-  invalid value (for example, the minimum greater than maximum)."
+  invalid value (for example the minimum greater than maximum)."
 0xC000004D,STATUS_INCOMPATIBLE_FILE_MAP,"A section was created to map a file that is not
   compatible with an already existing section that maps the same file."
 0xC000004E,STATUS_SECTION_PROTECTION,"A view to a section specifies a protection that is
@@ -566,18 +566,18 @@ Value,StringValue,Description
 0xC0000069,STATUS_LAST_ADMIN,"Indicates the requested operation would disable or
   delete the last remaining administration account. This is not allowed to
   prevent creating a situation in which the system cannot be administrated."
-0xC000006A,STATUS_WRONG_PASSWORD,"When trying to update a password, this return status
+0xC000006A,STATUS_WRONG_PASSWORD,"When trying to update a password this return status
   indicates that the value provided as the current password is not correct."
-0xC000006B,STATUS_ILL_FORMED_PASSWORD,"When trying to update a password, this return status
+0xC000006B,STATUS_ILL_FORMED_PASSWORD,"When trying to update a password this return status
   indicates that the value provided for the new password contains values that
   are not allowed in passwords."
-0xC000006C,STATUS_PASSWORD_RESTRICTION,"When trying to update a password, this status
-  indicates that some password update rule has been violated. For example, the
+0xC000006C,STATUS_PASSWORD_RESTRICTION,"When trying to update a password this status
+  indicates that some password update rule has been violated. For example the
   password might not meet length criteria."
 0xC000006D,STATUS_LOGON_FAILURE,"The attempted logon is invalid. This is either due to
   a bad username or authentication information."
 0xC000006E,STATUS_ACCOUNT_RESTRICTION,"Indicates a referenced user name and authentication
-  information are valid, but some user account restriction has prevented
+  information are valid but some user account restriction has prevented
   successful authentication (such as time-of-day restrictions)."
 0xC000006F,STATUS_INVALID_LOGON_HOURS,"The user account has time restrictions and cannot be
   logged onto at this time."
@@ -646,12 +646,12 @@ Value,StringValue,Description
   the system supports."
 0xC0000098,STATUS_FILE_INVALID,"The volume for a file has been externally altered such
   that the opened file is no longer valid."
-0xC0000099,STATUS_ALLOTTED_SPACE_EXCEEDED,"When a block of memory is allotted for future updates,
+0xC0000099,STATUS_ALLOTTED_SPACE_EXCEEDED,"When a block of memory is allotted for future updates
   such as the memory allocated to hold discretionary access control and primary
-  group information, successive updates might exceed the amount of memory
+  group information successive updates might exceed the amount of memory
   originally allotted. Because a quota might already have been charged to
-  several processes that have handles to the object, it is not reasonable to
-  alter the size of the allocated memory. Instead, a request that requires more
+  several processes that have handles to the object it is not reasonable to
+  alter the size of the allocated memory. Instead a request that requires more
   memory than has been allotted must fail and the
   STATUS_ALLOTTED_SPACE_EXCEEDED error returned."
 0xC000009A,STATUS_INSUFFICIENT_RESOURCES,"Insufficient system resources exist to complete the
@@ -659,7 +659,7 @@ Value,StringValue,Description
 0xC000009B,STATUS_DFS_EXIT_PATH_FOUND,"An attempt has been made to open a DFS exit path
   control file."
 0xC000009C,STATUS_DEVICE_DATA_ERROR,There are bad blocks (sectors) on the hard disk.
-0xC000009D,STATUS_DEVICE_NOT_CONNECTED,"There is bad cabling, non-termination, or the
+0xC000009D,STATUS_DEVICE_NOT_CONNECTED,"There is bad cabling non-termination or the
   controller is not able to obtain access to the hard disk."
 0xC000009F,STATUS_FREE_VM_NOT_AT_BASE,"Virtual memory cannot be freed because the base
   address is not the base of the region and a region size of zero was
@@ -712,7 +712,7 @@ Value,StringValue,Description
 0xC00000B9,STATUS_COULD_NOT_INTERPRET,"The passed ACL did not contain the minimum required
   information."
 0xC00000BA,STATUS_FILE_IS_A_DIRECTORY,"The file that was specified as a target is a
-  directory, and the caller specified that it could be anything but a
+  directory and the caller specified that it could be anything but a
   directory."
 0xC00000BB,STATUS_NOT_SUPPORTED,The request is not supported.
 0xC00000BC,STATUS_REMOTE_NOT_LISTENING,This remote computer is not listening.
@@ -732,7 +732,7 @@ Value,StringValue,Description
 0xC00000C9,STATUS_NETWORK_NAME_DELETED,The network name was deleted.
 0xC00000CA,STATUS_NETWORK_ACCESS_DENIED,Network access is denied.
 0xC00000CB,STATUS_BAD_DEVICE_TYPE,"{Incorrect Network Resource Type} The specified device
-  type (LPT, for example) conflicts with the actual device type on the remote
+  type (LPT for example) conflicts with the actual device type on the remote
   resource."
 0xC00000CC,STATUS_BAD_NETWORK_NAME,"{Network Name Not Found} The specified share name
   cannot be found on the remote server."
@@ -762,7 +762,7 @@ Value,StringValue,Description
 0xC00000D9,STATUS_PIPE_EMPTY,"Used to indicate that a read operation was done on an
   empty pipe."
 0xC00000DA,STATUS_CANT_ACCESS_DOMAIN_INFO,"Configuration information could not be read from the
-  domain controller, either because the machine is unavailable or access has
+  domain controller either because the machine is unavailable or access has
   been denied."
 0xC00000DB,STATUS_CANT_TERMINATE_SELF,"Indicates that a thread attempted to terminate itself
   by default (called NtTerminateThread with NULL) and it was the last thread in
@@ -793,21 +793,21 @@ Value,StringValue,Description
   in time. This code is defined because the caller does not want to accept
   STATUS_ACCESS_VIOLATION in its filter."
 0xC00000E9,STATUS_UNEXPECTED_IO_ERROR,"If an I/O error that is not defined in the standard
-  FsRtl filter is returned, it is converted to the following error, which is
-  guaranteed to be in the filter. In this case, information is lost; however,
+  FsRtl filter is returned it is converted to the following error which is
+  guaranteed to be in the filter. In this case information is lost; however
   the filter correctly handles the exception."
 0xC00000EA,STATUS_UNEXPECTED_MM_CREATE_ERR,"If an MM error that is not defined in the standard
-  FsRtl filter is returned, it is converted to one of the following errors,
-  which are guaranteed to be in the filter. In this case, information is lost;
-  however, the filter correctly handles the exception."
+  FsRtl filter is returned it is converted to one of the following errors
+  which are guaranteed to be in the filter. In this case information is lost;
+  however the filter correctly handles the exception."
 0xC00000EB,STATUS_UNEXPECTED_MM_MAP_ERROR,"If an MM error that is not defined in the standard
-  FsRtl filter is returned, it is converted to one of the following errors,
-  which are guaranteed to be in the filter. In this case, information is lost;
-  however, the filter correctly handles the exception."
+  FsRtl filter is returned it is converted to one of the following errors
+  which are guaranteed to be in the filter. In this case information is lost;
+  however the filter correctly handles the exception."
 0xC00000EC,STATUS_UNEXPECTED_MM_EXTEND_ERR,"If an MM error that is not defined in the standard
-  FsRtl filter is returned, it is converted to one of the following errors,
-  which are guaranteed to be in the filter. In this case, information is lost;
-  however, the filter correctly handles the exception."
+  FsRtl filter is returned it is converted to one of the following errors
+  which are guaranteed to be in the filter. In this case information is lost;
+  however the filter correctly handles the exception."
 0xC00000ED,STATUS_NOT_LOGON_PROCESS,"The requested action is restricted for use by logon
   processes only. The calling process has not registered as a logon process."
 0xC00000EE,STATUS_LOGON_SESSION_EXISTS,"An attempt has been made to start a new session
@@ -836,9 +836,9 @@ Value,StringValue,Description
   function as the eleventh argument."
 0xC00000FA,STATUS_INVALID_PARAMETER_12,"An invalid parameter was passed to a service or
   function as the twelfth argument."
-0xC00000FB,STATUS_REDIRECTOR_NOT_STARTED,"An attempt was made to access a network file, but the
+0xC00000FB,STATUS_REDIRECTOR_NOT_STARTED,"An attempt was made to access a network file but the
   network software was not yet started."
-0xC00000FC,STATUS_REDIRECTOR_STARTED,"An attempt was made to start the redirector, but the
+0xC00000FC,STATUS_REDIRECTOR_STARTED,"An attempt was made to start the redirector but the
   redirector has already been started."
 0xC00000FD,STATUS_STACK_OVERFLOW,A new guard page for the stack cannot be created.
 0xC00000FE,STATUS_NO_SUCH_PACKAGE,A specified authentication package is unknown.
@@ -859,10 +859,10 @@ Value,StringValue,Description
 0xC0000106,STATUS_NAME_TOO_LONG,"A specified name string is too long for its intended
   use."
 0xC0000107,STATUS_FILES_OPEN,"The user attempted to force close the files on a
-  redirected drive, but there were opened files on the drive, and the user did
+  redirected drive but there were opened files on the drive and the user did
   not specify a sufficient level of force."
 0xC0000108,STATUS_CONNECTION_IN_USE,"The user attempted to force close the files on a
-  redirected drive, but there were opened directories on the drive, and the
+  redirected drive but there were opened directories on the drive and the
   user did not specify a sufficient level of force."
 0xC0000109,STATUS_MESSAGE_NOT_FOUND,"RtlFindMessage could not locate the requested message
   ID in the message table resource."
@@ -873,7 +873,7 @@ Value,StringValue,Description
 0xC000010C,STATUS_NO_GUID_TRANSLATION,"Indicates that an attempt was made to assign
   protection to a file system file or directory and one of the SIDs in the
   security descriptor could not be translated into a GUID that could be stored
-  by the file system. This causes the protection attempt to fail, which might
+  by the file system. This causes the protection attempt to fail which might
   cause a file creation attempt to fail."
 0xC000010D,STATUS_CANNOT_IMPERSONATE,"Indicates that an attempt has been made to impersonate
   via a named pipe that has not yet been read from."
@@ -881,7 +881,7 @@ Value,StringValue,Description
 0xC0000117,STATUS_NO_LDT,"Indicates that an attempt was made to change the size
   of the LDT for a process that has no LDT."
 0xC0000118,STATUS_INVALID_LDT_SIZE,"Indicates that an attempt was made to grow an LDT by
-  setting its size, or that the size was not an even number of selectors."
+  setting its size or that the size was not an even number of selectors."
 0xC0000119,STATUS_INVALID_LDT_OFFSET,"Indicates that the starting value for the LDT
   information was not an integral multiple of the selector size."
 0xC000011A,STATUS_INVALID_LDT_DESCRIPTOR,"Indicates that the user supplied an invalid descriptor
@@ -889,13 +889,13 @@ Value,StringValue,Description
 0xC000011B,STATUS_INVALID_IMAGE_NE_FORMAT,"The specified image file did not have the correct
   format. It appears to be NE format."
 0xC000011C,STATUS_RXACT_INVALID_STATE,"Indicates that the transaction state of a registry
-  subtree is incompatible with the requested operation. For example, a request
-  has been made to start a new transaction with one already in progress, or a
+  subtree is incompatible with the requested operation. For example a request
+  has been made to start a new transaction with one already in progress or a
   request has been made to apply a transaction when one is not currently in
   progress."
 0xC000011D,STATUS_RXACT_COMMIT_FAILURE,"Indicates an error has occurred during a registry
-  transaction commit. The database has been left in an unknown, but probably
-  inconsistent, state. The state of the registry transaction is left as
+  transaction commit. The database has been left in an unknown but probably
+  inconsistent state. The state of the registry transaction is left as
   COMMITTING."
 0xC000011E,STATUS_MAPPED_FILE_SIZE_ZERO,"An attempt was made to map a file of size zero with
   the maximum size specified as zero."
@@ -907,11 +907,11 @@ Value,StringValue,Description
 0xC0000122,STATUS_INVALID_COMPUTER_NAME,"Indicates a name that was specified as a remote
   computer name is syntactically invalid."
 0xC0000123,STATUS_FILE_DELETED,"An I/O request other than close was performed on a
-  file after it was deleted, which can only happen to a request that did not
+  file after it was deleted which can only happen to a request that did not
   complete before the last handle was closed via NtClose."
 0xC0000124,STATUS_SPECIAL_ACCOUNT,"Indicates an operation that is incompatible with
   built-in accounts has been attempted on a built-in (special) SAM account. For
-  example, built-in accounts cannot be deleted."
+  example built-in accounts cannot be deleted."
 0xC0000125,STATUS_SPECIAL_GROUP,"The operation requested cannot be performed on the
   specified group because it is a built-in special group."
 0xC0000126,STATUS_SPECIAL_USER,"The operation requested cannot be performed on the
@@ -922,17 +922,17 @@ Value,StringValue,Description
   special case operations was attempted using a file object that had already
   been closed."
 0xC0000129,STATUS_TOO_MANY_THREADS,"Indicates a process has too many threads to perform
-  the requested action. For example, assignment of a primary token can be
+  the requested action. For example assignment of a primary token can be
   performed only when a process has zero or one threads."
 0xC000012A,STATUS_THREAD_NOT_IN_PROCESS,"An attempt was made to operate on a thread within a
-  specific process, but the specified thread is not in the specified process."
+  specific process but the specified thread is not in the specified process."
 0xC000012B,STATUS_TOKEN_ALREADY_IN_USE,"An attempt was made to establish a token for use as a
   primary token but the token is already in use. A token can only be the
   primary token of one process at a time."
 0xC000012C,STATUS_PAGEFILE_QUOTA_EXCEEDED,The page file quota was exceeded.
 0xC000012D,STATUS_COMMITMENT_LIMIT,"{Out of Virtual Memory} Your system is low on virtual
-  memory. To ensure that Windows runs correctly, increase the size of your
-  virtual memory paging file. For more information, see Help."
+  memory. To ensure that Windows runs correctly increase the size of your
+  virtual memory paging file. For more information see Help."
 0xC000012E,STATUS_INVALID_IMAGE_LE_FORMAT,"The specified image file did not have the correct
   format: it appears to be LE format."
 0xC000012F,STATUS_INVALID_IMAGE_NOT_MZ,"The specified image file did not have the correct
@@ -946,7 +946,7 @@ Value,StringValue,Description
 0xC0000133,STATUS_TIME_DIFFERENCE_AT_DC,"The time at the primary domain controller is different
   from the time at the backup domain controller or member server by too large
   an amount."
-0xC0000134,STATUS_SYNCHRONIZATION_REQUIRED,"On applicable Windows Server releases, the SAM
+0xC0000134,STATUS_SYNCHRONIZATION_REQUIRED,"On applicable Windows Server releases the SAM
   database is significantly out of synchronization with the copy on the domain
   controller. A complete synchronization is required."
 0xC0000135,STATUS_DLL_NOT_FOUND,"{Unable To Locate Component} This application has
@@ -971,7 +971,7 @@ Value,StringValue,Description
   I/O requests outstanding."
 0xC000013D,STATUS_REMOTE_RESOURCES,"{Insufficient Resources on Remote Computer} The remote
   computer has insufficient resources to complete the network request. For
-  example, the remote computer might not have enough available memory to carry
+  example the remote computer might not have enough available memory to carry
   out the request at this time."
 0xC000013E,STATUS_LINK_FAILED,"{Virtual Circuit Closed} An existing connection
   (virtual circuit) has been broken at the remote computer. There is probably
@@ -1009,10 +1009,10 @@ Value,StringValue,Description
   is corrupt; or the file could not be recovered because the alternate copy or
   log was absent or corrupt."
 0xC000014D,STATUS_REGISTRY_IO_FAILED,"An I/O operation initiated by the Registry failed and
-  cannot be recovered. The registry could not read in, write out, or flush one
+  cannot be recovered. The registry could not read in write out or flush one
   of the files that contain the system's image of the registry."
 0xC000014E,STATUS_NO_EVENT_PAIR,"An event pair synchronization operation was performed
-  using the thread-specific client/server event pair object, but no event pair
+  using the thread-specific client/server event pair object but no event pair
   object was associated with the thread."
 0xC000014F,STATUS_UNRECOGNIZED_VOLUME,"The volume does not contain a recognized file system.
   Be sure that all required file system drivers are loaded and that the volume
@@ -1025,8 +1025,8 @@ Value,StringValue,Description
 0xC0000153,STATUS_MEMBER_IN_ALIAS,"The specified account name is already a member of the
   group."
 0xC0000154,STATUS_ALIAS_EXISTS,The specified local group already exists.
-0xC0000155,STATUS_LOGON_NOT_GRANTED,"A requested type of logon (for example, interactive,
-  network, and service) is not granted by the local security policy of the
+0xC0000155,STATUS_LOGON_NOT_GRANTED,"A requested type of logon (for example interactive
+  network and service) is not granted by the local security policy of the
   target system. Ask the system administrator to grant the necessary form of
   logon."
 0xC0000156,STATUS_TOO_MANY_SECRETS,"The maximum number of secrets that can be stored in a
@@ -1039,15 +1039,15 @@ Value,StringValue,Description
   an internal inconsistency."
 0xC0000159,STATUS_FULLSCREEN_MODE,"The requested operation cannot be performed in
   full-screen mode."
-0xC000015A,STATUS_TOO_MANY_CONTEXT_IDS,"During a logon attempt, the user's security context
+0xC000015A,STATUS_TOO_MANY_CONTEXT_IDS,"During a logon attempt the user's security context
   accumulated too many security IDs. This is a very unusual situation. Remove
   the user from some global or local groups to reduce the number of security
   IDs to incorporate into the security context."
-0xC000015B,STATUS_LOGON_TYPE_NOT_GRANTED,"A user has requested a type of logon (for example,
+0xC000015B,STATUS_LOGON_TYPE_NOT_GRANTED,"A user has requested a type of logon (for example
   interactive or network) that has not been granted. An administrator has
   control over who can logon interactively and through the network."
 0xC000015C,STATUS_NOT_REGISTRY_FILE,"The system has attempted to load or restore a file
-  into the registry, and the specified file is not in the format of a registry
+  into the registry and the specified file is not in the format of a registry
   file."
 0xC000015D,STATUS_NT_CROSS_ENCRYPTION_REQUIRED,"An attempt was made to change a user password in the
   security account manager without providing the necessary Windows
@@ -1059,28 +1059,28 @@ Value,StringValue,Description
 0xC0000160,STATUS_ILL_FORMED_SERVICE_ENTRY,"A configuration registry node that represents a driver
   service entry was ill-formed and did not contain the required value entries."
 0xC0000161,STATUS_ILLEGAL_CHARACTER,"An illegal character was encountered. For a multibyte
-  character set, this includes a lead byte without a succeeding trail byte. For
+  character set this includes a lead byte without a succeeding trail byte. For
   the Unicode character set this includes the characters 0xFFFF and 0xFFFE."
 0xC0000162,STATUS_UNMAPPABLE_CHARACTER,"No mapping for the Unicode character exists in the
   target multibyte code page."
 0xC0000163,STATUS_UNDEFINED_CHARACTER,"The Unicode character is not defined in the Unicode
   character set that is installed on the system."
 0xC0000164,STATUS_FLOPPY_VOLUME,The paging file cannot be created on a floppy disk.
-0xC0000165,STATUS_FLOPPY_ID_MARK_NOT_FOUND,"{Floppy Disk Error} While accessing a floppy disk, an
+0xC0000165,STATUS_FLOPPY_ID_MARK_NOT_FOUND,"{Floppy Disk Error} While accessing a floppy disk an
   ID address mark was not found."
-0xC0000166,STATUS_FLOPPY_WRONG_CYLINDER,"{Floppy Disk Error} While accessing a floppy disk, the
+0xC0000166,STATUS_FLOPPY_WRONG_CYLINDER,"{Floppy Disk Error} While accessing a floppy disk the
   track address from the sector ID field was found to be different from the track
   address that is maintained by the controller."
 0xC0000167,STATUS_FLOPPY_UNKNOWN_ERROR,"{Floppy Disk Error} The floppy disk controller
   reported an error that is not recognized by the floppy disk driver."
-0xC0000168,STATUS_FLOPPY_BAD_REGISTERS,"{Floppy Disk Error} While accessing a floppy-disk, the
+0xC0000168,STATUS_FLOPPY_BAD_REGISTERS,"{Floppy Disk Error} While accessing a floppy-disk the
   controller returned inconsistent results via its registers."
-0xC0000169,STATUS_DISK_RECALIBRATE_FAILED,"{Hard Disk Error} While accessing the hard disk, a
-  recalibrate operation failed, even after retries."
-0xC000016A,STATUS_DISK_OPERATION_FAILED,"{Hard Disk Error} While accessing the hard disk, a
+0xC0000169,STATUS_DISK_RECALIBRATE_FAILED,"{Hard Disk Error} While accessing the hard disk a
+  recalibrate operation failed even after retries."
+0xC000016A,STATUS_DISK_OPERATION_FAILED,"{Hard Disk Error} While accessing the hard disk a
   disk operation failed even after retries."
-0xC000016B,STATUS_DISK_RESET_FAILED,"{Hard Disk Error} While accessing the hard disk, a
-  disk controller reset was needed, but even that failed."
+0xC000016B,STATUS_DISK_RESET_FAILED,"{Hard Disk Error} While accessing the hard disk a
+  disk controller reset was needed but even that failed."
 0xC000016C,STATUS_SHARED_IRQ_BUSY,"An attempt was made to open a device that was sharing
   an interrupt request (IRQ) with other devices. At least one other device that
   uses that IRQ was already opened. Two concurrent opens of devices that share
@@ -1091,7 +1091,7 @@ Value,StringValue,Description
 0xC000016E,STATUS_BIOS_FAILED_TO_CONNECT_INTERRUPT,"The basic input/output system (BIOS) failed to connect
   a system interrupt to the device or bus for which the device is connected."
 0xC0000172,STATUS_PARTITION_FAILURE,The tape could not be partitioned.
-0xC0000173,STATUS_INVALID_BLOCK_LENGTH,"When accessing a new tape of a multi-volume partition,
+0xC0000173,STATUS_INVALID_BLOCK_LENGTH,"When accessing a new tape of a multi-volume partition
   the current blocksize is incorrect."
 0xC0000174,STATUS_DEVICE_NOT_PARTITIONED,"The tape partition information could not be found when
   loading a tape."
@@ -1132,7 +1132,7 @@ Value,StringValue,Description
   was dismounted."
 0xC000018A,STATUS_NO_TRUST_LSA_SECRET,"The workstation does not have a trust secret for the
   primary domain in the local LSA database."
-0xC000018B,STATUS_NO_TRUST_SAM_ACCOUNT,"On applicable Windows Server releases, the SAM
+0xC000018B,STATUS_NO_TRUST_SAM_ACCOUNT,"On applicable Windows Server releases the SAM
   database does not have a computer account for this workstation trust
   relationship."
 0xC000018C,STATUS_TRUSTED_DOMAIN_FAILURE,"The logon request failed because the trust
@@ -1146,15 +1146,15 @@ Value,StringValue,Description
   validation authority cannot be reached."
 0xC0000191,STATUS_MUTANT_LIMIT_EXCEEDED,"An attempt was made to acquire a mutant such that its
   maximum count would have been exceeded."
-0xC0000192,STATUS_NETLOGON_NOT_STARTED,"An attempt was made to logon, but the NetLogon service
+0xC0000192,STATUS_NETLOGON_NOT_STARTED,"An attempt was made to logon but the NetLogon service
   was not started."
 0xC0000193,STATUS_ACCOUNT_EXPIRED,The user account has expired.
 0xC0000194,STATUS_POSSIBLE_DEADLOCK,{EXCEPTION} Possible deadlock condition.
 0xC0000195,STATUS_NETWORK_CREDENTIAL_CONFLICT,"Multiple connections to a server or shared resource by
-  the same user, using more than one user name, are not allowed. Disconnect all
+  the same user using more than one user name are not allowed. Disconnect all
   previous connections to the server or shared resource and try again."
 0xC0000196,STATUS_REMOTE_SESSION_LIMIT,"An attempt was made to establish a session to a
-  network server, but there are already too many sessions established to that
+  network server but there are already too many sessions established to that
   server."
 0xC0000197,STATUS_EVENTLOG_FILE_CHANGED,The log file has changed between reads.
 0xC0000198,STATUS_NOLOGON_INTERDOMAIN_TRUST_ACCOUNT,"The account used is an interdomain trust account. Use
@@ -1223,11 +1223,11 @@ Value,StringValue,Description
 0xC0000217,STATUS_NOT_CLIENT_SESSION,"The transport can only process the specified request
   on the client side of a session."
 0xC0000218,STATUS_CANNOT_LOAD_REGISTRY_FILE,"{Registry File Failure} The registry cannot load the
-  hive (file): %hs or its log or alternate. It is corrupt, absent, or not
+  hive (file): %hs or its log or alternate. It is corrupt absent or not
   writable."
 0xC0000219,STATUS_DEBUG_ATTACH_FAILED,"{Unexpected Failure in DebugActiveProcess} An
   unexpected failure occurred while processing a DebugActiveProcess API
-  request. Choosing OK will terminate the process, and choosing Cancel will
+  request. Choosing OK will terminate the process and choosing Cancel will
   ignore the error."
 0xC000021A,STATUS_SYSTEM_PROCESS_TERMINATED,"{Fatal System Error} The %hs system process terminated
   unexpectedly with a status of 0x%08x (0x%08x 0x%08x). The system has been
@@ -1240,10 +1240,10 @@ Value,StringValue,Description
 0xC000021E,STATUS_DRIVER_CANCEL_TIMEOUT,"{Cancel Timeout} The driver %hs failed to complete a
   canceled I/O request in the allotted time."
 0xC000021F,STATUS_REPLY_MESSAGE_MISMATCH,"{Reply Message Mismatch} An attempt was made to reply
-  to an LPC message, but the thread specified by the client ID in the message
+  to an LPC message but the thread specified by the client ID in the message
   was not waiting on that message."
 0xC0000220,STATUS_MAPPED_ALIGNMENT,"{Mapped View Alignment Incorrect} An attempt was made
-  to map a view of a file, but either the specified base address or the offset
+  to map a view of a file but either the specified base address or the offset
   into the file were not aligned on the proper allocation granularity."
 0xC0000221,STATUS_IMAGE_CHECKSUM_MISMATCH,"{Bad Image Checksum} The image %hs is possibly
   corrupt. The header checksum does not match the computed checksum."
@@ -1271,7 +1271,7 @@ Value,StringValue,Description
   moved or the extent stream is converted to a large stream."
 0xC000022D,STATUS_RETRY,The request needs to be retried.
 0xC000022E,STATUS_FOUND_OUT_OF_SCOPE,"The attempt to find the object found an object on the
-  volume that matches by ID; however, it is out of the scope of the handle that
+  volume that matches by ID; however it is out of the scope of the handle that
   is used for the operation."
 0xC000022F,STATUS_ALLOCATE_BUCKET,"The bucket array must be grown. Retry the transaction
   after doing so."
@@ -1320,7 +1320,7 @@ Value,StringValue,Description
 0xC0000248,STATUS_LOGIN_WKSTA_RESTRICTION,"The account is not authorized to log on from this
   station."
 0xC0000249,STATUS_IMAGE_MP_UP_MISMATCH,"{UP/MP Image Mismatch} The image %hs has been modified
-  for use on a uniprocessor system, but you are running it on a multiprocessor
+  for use on a uniprocessor system but you are running it on a multiprocessor
   machine. Reinstall the image file."
 0xC0000250,STATUS_INSUFFICIENT_LOGON_INFO,"There is insufficient account information to log you
   on."
@@ -1332,7 +1332,7 @@ Value,StringValue,Description
 0xC0000252,STATUS_BAD_SERVICE_ENTRYPOINT,"{Invalid Service Callback Entrypoint} The %hs service
   is not written correctly. The stack pointer has been left in an inconsistent
   state. The callback entry point should be declared as WINAPI or STDCALL.
-  Selecting OK will cause the service to continue operation. However, the
+  Selecting OK will cause the service to continue operation. However the
   service process might operate incorrectly."
 0xC0000253,STATUS_LPC_REPLY_LOST,"The server received the messages but did not send a
   reply."
@@ -1355,8 +1355,8 @@ Value,StringValue,Description
   of your user account. Choose a longer password."
 0xC000025B,STATUS_PWD_TOO_RECENT,"The policy of your user account does not allow you to
   change passwords too frequently. This is done to prevent users from changing
-  back to a familiar, but potentially discovered, password. If you feel your
-  password has been compromised, contact your administrator immediately to have
+  back to a familiar but potentially discovered password. If you feel your
+  password has been compromised contact your administrator immediately to have
   a new one assigned."
 0xC000025C,STATUS_PWD_HISTORY_CONFLICT,"You have attempted to change your password to one that
   you have used in the past. The policy of your user account does not allow
@@ -1382,7 +1382,7 @@ Value,StringValue,Description
   storage."
 0xC0000268,STATUS_EVALUATION_EXPIRATION,"{Windows Evaluation Notification} The evaluation
   period for this installation of Windows has expired. This system will
-  shutdown in 1 hour. To restore access to this installation of Windows,
+  shutdown in 1 hour. To restore access to this installation of Windows
   upgrade this installation by using a licensed distribution of this product."
 0xC0000269,STATUS_ILLEGAL_DLL_RELOCATION,"{Illegal System DLL Relocation} The system DLL %hs was
   relocated in memory. The application will not run properly. The relocation
@@ -1495,7 +1495,7 @@ Value,StringValue,Description
 0xC00002AF,STATUS_DS_CROSS_DOM_MOVE_FAILED,"An error occurred while performing a cross domain move
   operation."
 0xC00002B0,STATUS_DS_GC_NOT_AVAILABLE,Unable to contact the global catalog server.
-0xC00002B1,STATUS_DIRECTORY_SERVICE_REQUIRED,"The requested operation requires a directory service,
+0xC00002B1,STATUS_DIRECTORY_SERVICE_REQUIRED,"The requested operation requires a directory service
   and none was available."
 0xC00002B2,STATUS_REPARSE_ATTRIBUTE_CONFLICT,"The reparse attribute cannot be set because it is
   incompatible with an existing attribute."
@@ -1521,12 +1521,12 @@ Value,StringValue,Description
 0xC00002C7,STATUS_WMI_SET_FAILURE,The WMI data item or data block could not be changed.
 0xC00002C8,STATUS_COMMITMENT_MINIMUM,"{Virtual Memory Minimum Too Low} Your system is low on
   virtual memory. Windows is increasing the size of your virtual memory paging
-  file. During this process, memory requests for some applications might be
-  denied. For more information, see Help."
+  file. During this process memory requests for some applications might be
+  denied. For more information see Help."
 0xC00002C9,STATUS_REG_NAT_CONSUMPTION,"{EXCEPTION} Register NaT consumption faults. A NaT
   value is consumed on a non-speculative instruction."
 0xC00002CA,STATUS_TRANSPORT_FULL,"The transport element of the medium changer contains
-  media, which is causing the operation to fail."
+  media which is causing the operation to fail."
 0xC00002CB,STATUS_DS_SAM_INIT_FAILURE,"Security Accounts Manager initialization failed
   because of the following error: %hs Error Status: 0x%x. Click OK to shut down
   this system and restart in Directory Services Restore Mode. Check the event
@@ -1546,10 +1546,10 @@ Value,StringValue,Description
 0xC00002D3,STATUS_POWER_STATE_INVALID,"The power state of the current device cannot support
   this request."
 0xC00002D4,STATUS_DS_INVALID_GROUP_TYPE,The specified group type is invalid.
-0xC00002D5,STATUS_DS_NO_NEST_GLOBALGROUP_IN_MIXEDDOMAIN,"In a mixed domain, no nesting of a global group if the
+0xC00002D5,STATUS_DS_NO_NEST_GLOBALGROUP_IN_MIXEDDOMAIN,"In a mixed domain no nesting of a global group if the
   group is security enabled."
-0xC00002D6,STATUS_DS_NO_NEST_LOCALGROUP_IN_MIXEDDOMAIN,"In a mixed domain, cannot nest local groups with other
-  local groups, if the group is security enabled."
+0xC00002D6,STATUS_DS_NO_NEST_LOCALGROUP_IN_MIXEDDOMAIN,"In a mixed domain cannot nest local groups with other
+  local groups if the group is security enabled."
 0xC00002D7,STATUS_DS_GLOBAL_CANT_HAVE_LOCAL_MEMBER,A global group cannot have a local group as a member.
 0xC00002D8,STATUS_DS_GLOBAL_CANT_HAVE_UNIVERSAL_MEMBER,"A global group cannot have a universal group as a
   member."
@@ -1616,8 +1616,8 @@ Value,StringValue,Description
   strong crypto but it is not supported on the local machine."
 0xC00002F7,STATUS_TOO_MANY_PRINCIPALS,The KDC reply contained more than one principal name.
 0xC00002F8,STATUS_NO_PA_DATA,"Expected to find PA data for a hint of what etype to
-  use, but it was not found."
-0xC00002F9,STATUS_PKINIT_NAME_MISMATCH,"The client certificate does not contain a valid UPN,
+  use but it was not found."
+0xC00002F9,STATUS_PKINIT_NAME_MISMATCH,"The client certificate does not contain a valid UPN
   or does not match the client name in the logon request. Contact your
   administrator."
 0xC00002FA,STATUS_SMARTCARD_LOGON_REQUIRED,Smart card logon is required and was not used.
@@ -1662,12 +1662,12 @@ Value,StringValue,Description
 0xC0000352,STATUS_EFS_ALG_BLOB_TOO_BIG,"The encryption algorithm that is used on the source
   file needs a bigger key buffer than the one that is used on the destination
   file."
-0xC0000353,STATUS_PORT_NOT_SET,"An attempt to remove a processes DebugPort was made,
+0xC0000353,STATUS_PORT_NOT_SET,"An attempt to remove a processes DebugPort was made
   but a port was not already associated with the process."
 0xC0000354,STATUS_DEBUGGER_INACTIVE,"An attempt to do an operation on a debug port failed
   because the port is in the process of being deleted."
 0xC0000355,STATUS_DS_VERSION_CHECK_FAILURE,"This version of Windows is not compatible with the
-  behavior version of the directory forest, domain, or domain controller."
+  behavior version of the directory forest domain or domain controller."
 0xC0000356,STATUS_AUDITING_DISABLED,The specified event is currently not being audited.
 0xC0000357,STATUS_PRENT4_MACHINE_ACCOUNT,"The machine account was created prior to Windows NT
   4.0 operating system. The account needs to be recreated."
@@ -1900,26 +1900,26 @@ Value,StringValue,Description
 0xC0000708,STATUS_RESOURCE_IN_USE,The resource requested is already in use.
 0xC0000709,STATUS_HARDWARE_MEMORY_ERROR,"The hardware has reported an uncorrectable memory
   error."
-0xC000070A,STATUS_THREADPOOL_HANDLE_EXCEPTION,"Status 0x%08x was returned, waiting on handle 0x%x for
-  wait 0x%p, in waiter 0x%p."
-0xC000070B,STATUS_THREADPOOL_SET_EVENT_ON_COMPLETION_FAILED,"After a callback to 0x%p(0x%p), a completion call to
+0xC000070A,STATUS_THREADPOOL_HANDLE_EXCEPTION,"Status 0x%08x was returned waiting on handle 0x%x for
+  wait 0x%p in waiter 0x%p."
+0xC000070B,STATUS_THREADPOOL_SET_EVENT_ON_COMPLETION_FAILED,"After a callback to 0x%p(0x%p) a completion call to
   Set event(0x%p) failed with status 0x%08x."
-0xC000070C,STATUS_THREADPOOL_RELEASE_SEMAPHORE_ON_COMPLETION_FAILED,"After a callback to 0x%p(0x%p), a completion call to
-  ReleaseSemaphore(0x%p, %d) failed with status 0x%08x."
-0xC000070D,STATUS_THREADPOOL_RELEASE_MUTEX_ON_COMPLETION_FAILED,"After a callback to 0x%p(0x%p), a completion call to
+0xC000070C,STATUS_THREADPOOL_RELEASE_SEMAPHORE_ON_COMPLETION_FAILED,"After a callback to 0x%p(0x%p) a completion call to
+  ReleaseSemaphore(0x%p %d) failed with status 0x%08x."
+0xC000070D,STATUS_THREADPOOL_RELEASE_MUTEX_ON_COMPLETION_FAILED,"After a callback to 0x%p(0x%p) a completion call to
   ReleaseMutex(%p) failed with status 0x%08x."
-0xC000070E,STATUS_THREADPOOL_FREE_LIBRARY_ON_COMPLETION_FAILED,"After a callback to 0x%p(0x%p), a completion call to
+0xC000070E,STATUS_THREADPOOL_FREE_LIBRARY_ON_COMPLETION_FAILED,"After a callback to 0x%p(0x%p) a completion call to
   FreeLibrary(%p) failed with status 0x%08x."
 0xC000070F,STATUS_THREADPOOL_RELEASED_DURING_OPERATION,"The thread pool 0x%p was released while a thread was
   posting a callback to 0x%p(0x%p) to it."
-0xC0000710,STATUS_CALLBACK_RETURNED_WHILE_IMPERSONATING,"A thread pool worker thread is impersonating a client,
-  after a callback to 0x%p(0x%p). This is unexpected, indicating that the
+0xC0000710,STATUS_CALLBACK_RETURNED_WHILE_IMPERSONATING,"A thread pool worker thread is impersonating a client
+  after a callback to 0x%p(0x%p). This is unexpected indicating that the
   callback is missing a call to revert the impersonation."
-0xC0000711,STATUS_APC_RETURNED_WHILE_IMPERSONATING,"A thread pool worker thread is impersonating a client,
-  after executing an APC. This is unexpected, indicating that the APC is
+0xC0000711,STATUS_APC_RETURNED_WHILE_IMPERSONATING,"A thread pool worker thread is impersonating a client
+  after executing an APC. This is unexpected indicating that the APC is
   missing a call to revert the impersonation."
-0xC0000712,STATUS_PROCESS_IS_PROTECTED,"Either the target process, or the target thread's
-  containing process, is a protected process."
+0xC0000712,STATUS_PROCESS_IS_PROTECTED,"Either the target process or the target thread's
+  containing process is a protected process."
 0xC0000713,STATUS_MCA_EXCEPTION,"A thread is getting dispatched with MCA EXCEPTION
   because of MCA."
 0xC0000714,STATUS_CERTIFICATE_MAPPING_NOT_UNIQUE,The client certificate account mapping is not unique.
@@ -1933,21 +1933,21 @@ Value,StringValue,Description
 0xC0000719,STATUS_CONTEXT_MISMATCH,The provided context did not match the target.
 0xC000071A,STATUS_PORT_ALREADY_HAS_COMPLETION_LIST,The specified port already has a completion list.
 0xC000071B,STATUS_CALLBACK_RETURNED_THREAD_PRIORITY,"A threadpool worker thread entered a callback at
-  thread base priority 0x%x and exited at priority 0x%x.","This is unexpected, indicating that the callback
+  thread base priority 0x%x and exited at priority 0x%x.","This is unexpected indicating that the callback
   missed restoring the priority."
-0xC000071C,STATUS_INVALID_THREAD,"An invalid thread, handle %p, is specified for this
-  operation. Possibly, a threadpool worker thread was specified."
-0xC000071D,STATUS_CALLBACK_RETURNED_TRANSACTION,"A threadpool worker thread entered a callback, which
-  left transaction state.","This is unexpected, indicating that the callback
+0xC000071C,STATUS_INVALID_THREAD,"An invalid thread handle %p is specified for this
+  operation. Possibly a threadpool worker thread was specified."
+0xC000071D,STATUS_CALLBACK_RETURNED_TRANSACTION,"A threadpool worker thread entered a callback which
+  left transaction state.","This is unexpected indicating that the callback
   missed clearing the transaction."
-0xC000071E,STATUS_CALLBACK_RETURNED_LDR_LOCK,"A threadpool worker thread entered a callback, which
-  left the loader lock held.","This is unexpected, indicating that the callback
+0xC000071E,STATUS_CALLBACK_RETURNED_LDR_LOCK,"A threadpool worker thread entered a callback which
+  left the loader lock held.","This is unexpected indicating that the callback
   missed releasing the lock."
-0xC000071F,STATUS_CALLBACK_RETURNED_LANG,"A threadpool worker thread entered a callback, which
-  left with preferred languages set.","This is unexpected, indicating that the callback
+0xC000071F,STATUS_CALLBACK_RETURNED_LANG,"A threadpool worker thread entered a callback which
+  left with preferred languages set.","This is unexpected indicating that the callback
   missed clearing them."
-0xC0000720,STATUS_CALLBACK_RETURNED_PRI_BACK,"A threadpool worker thread entered a callback, which
-  left with background priorities set.","This is unexpected, indicating that the callback
+0xC0000720,STATUS_CALLBACK_RETURNED_PRI_BACK,"A threadpool worker thread entered a callback which
+  left with background priorities set.","This is unexpected indicating that the callback
   missed restoring the original priorities."
 0xC0000800,STATUS_DISK_REPAIR_DISABLED,"The attempted operation required self healing to be
   enabled."
@@ -1967,13 +1967,13 @@ Value,StringValue,Description
   blocked."
 0xC0000904,STATUS_FILE_TOO_LARGE,"The file size exceeds the limit allowed and cannot be
   saved."
-0xC0000905,STATUS_FORMS_AUTH_REQUIRED,"Access Denied. Before opening files in this location,
+0xC0000905,STATUS_FORMS_AUTH_REQUIRED,"Access Denied. Before opening files in this location
   you must first browse to the e.g. site and select the option to log on
   automatically."
 0xC0000906,STATUS_VIRUS_INFECTED,"The operation did not complete successfully because
   the file contains a virus."
 0xC0000907,STATUS_VIRUS_DELETED,"This file contains a virus and cannot be opened. Due
-  to the nature of this virus, the file has been removed from this location."
+  to the nature of this virus the file has been removed from this location."
 0xC0000908,STATUS_BAD_MCFG_TABLE,"The resources required for this device conflict with
   the MCFG table."
 0xC000090B,STATUS_BAD_DATA,Bad data.
@@ -2187,7 +2187,7 @@ File system metadata files"
 0xC00A0015,STATUS_CTX_WINSTATION_NOT_FOUND,The specified session cannot be found.
 0xC00A0016,STATUS_CTX_WINSTATION_NAME_COLLISION,The specified session name is already in use.
 0xC00A0017,STATUS_CTX_WINSTATION_BUSY,"The requested operation cannot be completed because
-  the terminal connection is currently processing a connect, disconnect, reset,
+  the terminal connection is currently processing a connect disconnect reset
   or delete operation."
 0xC00A0018,STATUS_CTX_BAD_VIDEO_MODE,"An attempt has been made to connect to a session whose
   video mode is not supported by the current client."
@@ -2202,14 +2202,14 @@ File system metadata files"
 0xC00A0028,STATUS_CTX_CONSOLE_CONNECT,"Reconnecting a disconnected session to the console is
   not supported."
 0xC00A002A,STATUS_CTX_SHADOW_DENIED,The request to control another session remotely was denied.
-0xC00A002B,STATUS_CTX_WINSTATION_ACCESS_DENIED,"A process has requested access to a session, but has
+0xC00A002B,STATUS_CTX_WINSTATION_ACCESS_DENIED,"A process has requested access to a session but has
   not been granted those access rights."
 0xC00A002E,STATUS_CTX_INVALID_WD,The terminal connection driver %1 is invalid.
 0xC00A002F,STATUS_CTX_WD_NOT_FOUND,"The terminal connection driver %1 was not found in the
   system path."
 0xC00A0030,STATUS_CTX_SHADOW_INVALID,"The requested session cannot be controlled remotely.
-  You cannot control your own session, a session that is trying to control your
-  session, a session that has no user logged on, or other sessions from the
+  You cannot control your own session a session that is trying to control your
+  session a session that has no user logged on or other sessions from the
   console."
 0xC00A0031,STATUS_CTX_SHADOW_DISABLED,"The requested session is not configured to allow
   remote control."
@@ -2218,12 +2218,12 @@ File system metadata files"
 0xC00A0033,STATUS_CTX_CLIENT_LICENSE_NOT_SET,"Your request to connect to this terminal server has been
   rejected. Your terminal server client license number has not been entered for
   this copy of the terminal client. Contact your system administrator for help
-  in entering a valid, unique license number for this terminal server client.
+  in entering a valid unique license number for this terminal server client.
   Click OK to continue."
 0xC00A0034,STATUS_CTX_CLIENT_LICENSE_IN_USE,"Your request to connect to this terminal server has
   been rejected. Your terminal server client license number is currently being
   used by another user. Contact your system administrator to obtain a new copy
-  of the terminal server client with a valid, unique license number. Click OK
+  of the terminal server client with a valid unique license number. Click OK
   to continue."
 0xC00A0035,STATUS_CTX_SHADOW_ENDED_BY_MODE_CHANGE,"The remote control of the console was terminated
   because the display mode was changed. Changing the display mode in a remote
@@ -2239,8 +2239,8 @@ File system metadata files"
 0xC00B0001,STATUS_MUI_FILE_NOT_FOUND,The resource loader failed to find an MUI file.
 0xC00B0002,STATUS_MUI_INVALID_FILE,"The resource loader failed to load an MUI file because
   the file failed to pass validation."
-0xC00B0003,STATUS_MUI_INVALID_RC_CONFIG,"The RC manifest is corrupted with garbage data, is an
-  unsupported version, or is missing a required item."
+0xC00B0003,STATUS_MUI_INVALID_RC_CONFIG,"The RC manifest is corrupted with garbage data is an
+  unsupported version or is missing a required item."
 0xC00B0004,STATUS_MUI_INVALID_LOCALE_NAME,The RC manifest has an invalid culture name.
 0xC00B0005,STATUS_MUI_INVALID_ULTIMATEFALLBACK_NAME,"The RC manifest has and invalid ultimate fallback
   name."
@@ -2347,12 +2347,12 @@ File system metadata files"
 0xC0150018,STATUS_SXS_IDENTITY_DUPLICATE_ATTRIBUTE,"An identity contains two definitions for the same
   attribute."
 0xC0150019,STATUS_SXS_IDENTITY_PARSE_ERROR,"The identity string is malformed. This might be due to
-  a trailing comma, more than two unnamed attributes, a missing attribute name,
+  a trailing comma more than two unnamed attributes a missing attribute name
   or a missing attribute value."
 0xC015001A,STATUS_SXS_COMPONENT_STORE_CORRUPT,The component store has become corrupted.
 0xC015001B,STATUS_SXS_FILE_HASH_MISMATCH,"A component's file does not match the verification
   information present in the component manifest."
-0xC015001C,STATUS_SXS_MANIFEST_IDENTITY_SAME_BUT_CONTENTS_DIFFERENT,"The identities of the manifests are identical, but
+0xC015001C,STATUS_SXS_MANIFEST_IDENTITY_SAME_BUT_CONTENTS_DIFFERENT,"The identities of the manifests are identical but
   their contents are different."
 0xC015001D,STATUS_SXS_IDENTITIES_DIFFERENT,The component identities are different.
 0xC015001E,STATUS_SXS_ASSEMBLY_IS_NOT_A_DEPLOYMENT,The assembly is not a deployment.
@@ -2399,16 +2399,16 @@ File system metadata files"
 0xC0190011,STATUS_CRM_PROTOCOL_NOT_FOUND,"The requested propagation protocol was not registered
   as a CRM."
 0xC0190012,STATUS_TRANSACTION_SUPERIOR_EXISTS,"The transaction object already has a superior
-  enlistment, and the caller attempted an operation that would have created a
+  enlistment and the caller attempted an operation that would have created a
   new superior. Only a single superior enlistment is allowed."
 0xC0190013,STATUS_TRANSACTION_REQUEST_NOT_VALID,"The requested operation is not valid on the
   transaction object in its current state."
-0xC0190014,STATUS_TRANSACTION_NOT_REQUESTED,"The caller has called a response API, but the response
+0xC0190014,STATUS_TRANSACTION_NOT_REQUESTED,"The caller has called a response API but the response
   is not expected because the transaction manager did not issue the
   corresponding request to the caller."
-0xC0190015,STATUS_TRANSACTION_ALREADY_ABORTED,"It is too late to perform the requested operation,
+0xC0190015,STATUS_TRANSACTION_ALREADY_ABORTED,"It is too late to perform the requested operation
   because the transaction has already been aborted."
-0xC0190016,STATUS_TRANSACTION_ALREADY_COMMITTED,"It is too late to perform the requested operation,
+0xC0190016,STATUS_TRANSACTION_ALREADY_COMMITTED,"It is too late to perform the requested operation
   because the transaction has already been committed."
 0xC0190017,STATUS_TRANSACTION_INVALID_MARSHALL_BUFFER,"The buffer passed in to NtPushTransaction or
   NtPullTransaction is not in a valid format."
@@ -2417,7 +2417,7 @@ File system metadata files"
 0xC0190019,STATUS_LOG_GROWTH_FAILED,"An attempt to create space in the transactional
   resource manager's log failed. The failure status has been recorded in the
   event log."
-0xC0190021,STATUS_OBJECT_NO_LONGER_EXISTS,"The object (file, stream, or link) that corresponds to
+0xC0190021,STATUS_OBJECT_NO_LONGER_EXISTS,"The object (file stream or link) that corresponds to
   the handle has been deleted by a transaction savepoint rollback."
 0xC0190022,STATUS_STREAM_MINIVERSION_NOT_FOUND,"The specified file miniversion was not found for this
   transacted file open."
@@ -2442,7 +2442,7 @@ File system metadata files"
 0xC0190037,STATUS_CANT_BREAK_TRANSACTIONAL_DEPENDENCY,"The operation cannot be performed because another
   transaction is depending on this property not changing."
 0xC0190038,STATUS_CANT_CROSS_RM_BOUNDARY,"The operation would involve a single file with two
-  transactional resource managers and is, therefore, not allowed."
+  transactional resource managers and is therefore not allowed."
 0xC0190039,STATUS_TXF_DIR_NOT_EMPTY,"The $Txf directory must be empty for this operation to
   succeed."
 0xC019003A,STATUS_INDOUBT_TRANSACTIONS_EXIST,"The operation would leave a transactional resource
@@ -2460,7 +2460,7 @@ File system metadata files"
 0xC0190040,STATUS_TRANSACTED_MAPPING_UNSUPPORTED_REMOTE,"Memory mapping (creating a mapped section) a remote
   file under a transaction is not supported."
 0xC0190043,STATUS_TRANSACTION_REQUIRED_PROMOTION,"Promotion was required to allow the resource manager
-  to enlist, but the transaction was set to disallow it."
+  to enlist but the transaction was set to disallow it."
 0xC0190044,STATUS_CANNOT_EXECUTE_FILE_IN_TRANSACTION,"This file is open for modification in an unresolved
   transaction and can be opened for execute only by a transacted reader."
 0xC0190045,STATUS_TRANSACTIONS_NOT_FROZEN,"The request to thaw frozen transactions was ignored
@@ -2470,7 +2470,7 @@ File system metadata files"
 0xC0190047,STATUS_NOT_SNAPSHOT_VOLUME,"The target volume is not a snapshot volume. This
   operation is valid only on a volume mounted as a snapshot."
 0xC0190048,STATUS_NO_SAVEPOINT_WITH_OPEN_FILES,"The savepoint operation failed because files are open
-  on the transaction, which is not permitted."
+  on the transaction which is not permitted."
 0xC0190049,STATUS_SPARSE_NOT_ALLOWED_IN_TRANSACTION,"The sparse operation could not be completed because a
   transaction is active on the file."
 0xC019004A,STATUS_TM_IDENTITY_MISMATCH,"The call to create a transaction manager object failed
@@ -2479,7 +2479,7 @@ File system metadata files"
 0xC019004B,STATUS_FLOATED_SECTION,"I/O was attempted on a section object that has been
   floated as a result of a transaction ending. There is no valid data."
 0xC019004C,STATUS_CANNOT_ACCEPT_TRANSACTED_WORK,"The transactional resource manager cannot currently
-  accept transacted work due to a transient condition, such as low resources."
+  accept transacted work due to a transient condition such as low resources."
 0xC019004D,STATUS_CANNOT_ABORT_TRANSACTIONS,"The transactional resource manager had too many
   transactions outstanding that could not be aborted. The transactional
   resource manager has been shut down."
@@ -2494,14 +2494,14 @@ File system metadata files"
 0xC0190052,STATUS_TRANSACTIONMANAGER_NOT_ONLINE,"The specified resource manager was unable to create an
   enlistment because its associated transaction manager is not online."
 0xC0190053,STATUS_TRANSACTIONMANAGER_RECOVERY_NAME_COLLISION,"The specified transaction manager was unable to create
-  the objects contained in its log file in the Ob namespace. Therefore, the
+  the objects contained in its log file in the Ob namespace. Therefore the
   transaction manager was unable to recover."
 0xC0190054,STATUS_TRANSACTION_NOT_ROOT,"The call to create a superior enlistment on this
   transaction object could not be completed because the transaction object
   specified for the enlistment is a subordinate branch of the transaction. Only
   the root of the transaction can be enlisted as a superior."
 0xC0190055,STATUS_TRANSACTION_OBJECT_EXPIRED,"Because the associated transaction manager or resource
-  manager has been closed, the handle is no longer valid."
+  manager has been closed the handle is no longer valid."
 0xC0190056,STATUS_COMPRESSION_NOT_ALLOWED_IN_TRANSACTION,"The compression operation could not be completed
   because a transaction is active on the file."
 0xC0190057,STATUS_TRANSACTION_RESPONSE_NOT_ENLISTED,"The specified operation could not be performed on this
@@ -2576,7 +2576,7 @@ File system metadata files"
 0xC01A001F,STATUS_LOG_DEDICATED,The operation failed because the log is dedicated.
 0xC01A0020,STATUS_LOG_ARCHIVE_NOT_IN_PROGRESS,The operation requires an archive context.
 0xC01A0021,STATUS_LOG_ARCHIVE_IN_PROGRESS,Log archival is in progress.
-0xC01A0022,STATUS_LOG_EPHEMERAL,"The operation requires a nonephemeral log, but the log
+0xC01A0022,STATUS_LOG_EPHEMERAL,"The operation requires a nonephemeral log but the log
   is ephemeral."
 0xC01A0023,STATUS_LOG_NOT_ENOUGH_CONTAINERS,"The log must have at least two containers before it
   can be read from or written to."
@@ -2600,12 +2600,12 @@ File system metadata files"
 0xC01A002E,STATUS_LOG_INCONSISTENT_SECURITY,"Security on the log and its containers is
   inconsistent."
 0xC01A002F,STATUS_LOG_APPENDED_FLUSH_FAILED,"Records were appended to the log or reservation
-  changes were made, but the log could not be flushed."
+  changes were made but the log could not be flushed."
 0xC01A0030,STATUS_LOG_PINNED_RESERVATION,"The log is pinned due to reservation consuming most of
   the log space. Free some reserved records to make space available."
 0xC01B00EA,STATUS_VIDEO_HUNG_DISPLAY_DRIVER_THREAD,"{Display Driver Stopped Responding} The %hs display
   driver has stopped working normally. Save your work and reboot the system to
-  restore full display functionality. The next time you reboot the computer, a
+  restore full display functionality. The next time you reboot the computer a
   dialog box will allow you to upload data about this failure to Microsoft."
 0xC01C0001,STATUS_FLT_NO_HANDLER_DEFINED,"A handler was not defined by the filter for this
   operation."
@@ -2630,10 +2630,10 @@ File system metadata files"
   context at this time because it is being removed from the system before the
   operation is completed by the lower drivers."
 0xC01C000A,STATUS_FLT_INTERNAL_ERROR,"The Filter Manager had an internal error from which it
-  cannot recover; therefore, the operation has failed. This is usually the
+  cannot recover; therefore the operation has failed. This is usually the
   result of a filter returning an invalid value from a pre-operation callback."
 0xC01C000B,STATUS_FLT_DELETING_OBJECT,"The object specified for this action is in the process
-  of being deleted; therefore, the action requested cannot be completed at this
+  of being deleted; therefore the action requested cannot be completed at this
   time."
 0xC01C000C,STATUS_FLT_MUST_BE_NONPAGED_POOL,A nonpaged pool must be used for this type of context.
 0xC01C000D,STATUS_FLT_DUPLICATE_ENTRY,"A duplicate handler definition has been provided for
@@ -2739,7 +2739,7 @@ File system metadata files"
 0xC01E0304,STATUS_GRAPHICS_INVALID_VIDEO_PRESENT_SOURCE,The specified video present source is invalid.
 0xC01E0305,STATUS_GRAPHICS_INVALID_VIDEO_PRESENT_TARGET,The specified video present target is invalid.
 0xC01E0306,STATUS_GRAPHICS_VIDPN_MODALITY_NOT_SUPPORTED,"The specified VidPN modality is not supported (for
-  example, at least two of the pinned modes are not co-functional)."
+  example at least two of the pinned modes are not co-functional)."
 0xC01E0308,STATUS_GRAPHICS_INVALID_VIDPN_SOURCEMODESET,The specified VidPN source mode set is invalid.
 0xC01E0309,STATUS_GRAPHICS_INVALID_VIDPN_TARGETMODESET,The specified VidPN target mode set is invalid.
 0xC01E030A,STATUS_GRAPHICS_INVALID_FREQUENCY,The specified video signal frequency is invalid.
@@ -2796,7 +2796,7 @@ File system metadata files"
   used by another descriptor in the set."
 0xC01E032F,STATUS_GRAPHICS_INVALID_VIDPN_TARGET_SUBSET_TYPE,The specified video present target subset type is invalid.
 0xC01E0330,STATUS_GRAPHICS_RESOURCES_NOT_RELATED,"Two or more of the specified resources are not related
-  to each other, as defined by the interface semantics."
+  to each other as defined by the interface semantics."
 0xC01E0331,STATUS_GRAPHICS_SOURCE_ID_MUST_BE_UNIQUE,"The ID of the specified video present source is being
   used by another source in the set."
 0xC01E0332,STATUS_GRAPHICS_TARGET_ID_MUST_BE_UNIQUE,"The ID of the specified video present target is being
@@ -2865,7 +2865,7 @@ File system metadata files"
   for the specified source of the specified VidPN's topology."
 0xC01E035B,STATUS_GRAPHICS_INVALID_CLIENT_TYPE,The specified client type was not recognized.
 0xC01E035C,STATUS_GRAPHICS_CLIENTVIDPN_NOT_SET,"The client VidPN is not set on this adapter (for
-  example, no user mode-initiated mode changes have taken place on this
+  example no user mode-initiated mode changes have taken place on this
   adapter)."
 0xC01E0400,STATUS_GRAPHICS_SPECIFIED_CHILD_ALREADY_CONNECTED,"The specified display adapter child device already has
   an external device connected to it."
@@ -2904,8 +2904,8 @@ File system metadata files"
 0xC01E0508,STATUS_GRAPHICS_PVP_MIRRORING_DEVICES_NOT_SUPPORTED,"The PVP does not support mirroring display devices
   because they do not have any protected outputs."
 0xC01E050A,STATUS_GRAPHICS_OPM_INVALID_POINTER,"The function failed because an invalid pointer
-  parameter was passed to it. A pointer parameter is invalid if it is null, is
-  not correctly aligned, or it points to an invalid address or a kernel mode
+  parameter was passed to it. A pointer parameter is invalid if it is null is
+  not correctly aligned or it points to an invalid address or a kernel mode
   address."
 0xC01E050B,STATUS_GRAPHICS_OPM_INTERNAL_ERROR,An internal error caused an operation to fail.
 0xC01E050C,STATUS_GRAPHICS_OPM_INVALID_HANDLE,"The function failed because the caller passed in an
@@ -2940,13 +2940,13 @@ File system metadata files"
 0xC01E051A,STATUS_GRAPHICS_OPM_PROTECTED_OUTPUT_NO_LONGER_EXISTS,"The operating system asynchronously destroyed this
   OPM-protected output because the operating system state changed. This error
   typically occurs because the monitor PDO associated with this protected
-  output was removed or stopped, the protected output's session became a
-  nonconsole session, or the protected output's desktop became inactive."
+  output was removed or stopped the protected output's session became a
+  nonconsole session or the protected output's desktop became inactive."
 0xC01E051B,STATUS_GRAPHICS_OPM_SESSION_TYPE_CHANGE_IN_PROGRESS,"OPM functions cannot be called when a session is
-  changing its type. Three types of sessions currently exist: console,
-  disconnected, and remote (RDP or ICA)."
-0xC01E051C,STATUS_GRAPHICS_OPM_PROTECTED_OUTPUT_DOES_NOT_HAVE_COPP_SEMANTICS,"The DxgkDdiOPMGetCOPPCompatibleInformation,
-  DxgkDdiOPMGetInformation, or DxgkDdiOPMConfigureProtectedOutput function
+  changing its type. Three types of sessions currently exist: console
+  disconnected and remote (RDP or ICA)."
+0xC01E051C,STATUS_GRAPHICS_OPM_PROTECTED_OUTPUT_DOES_NOT_HAVE_COPP_SEMANTICS,"The DxgkDdiOPMGetCOPPCompatibleInformation
+  DxgkDdiOPMGetInformation or DxgkDdiOPMConfigureProtectedOutput function
   failed. This error is returned only if a protected output has OPM semantics. ","DxgkDdiOPMGetCOPPCompatibleInformation always returns
   this error if a protected output has OPM semantics.","DxgkDdiOPMGetInformation returns this error code if
   the caller requested COPP-specific information.","DxgkDdiOPMConfigureProtectedOutput returns this error
@@ -2957,8 +2957,8 @@ File system metadata files"
   passed-in OMAC value is invalid."
 0xC01E051E,STATUS_GRAPHICS_OPM_DRIVER_INTERNAL_ERROR,"The function failed because an unexpected error
   occurred inside a display driver."
-0xC01E051F,STATUS_GRAPHICS_OPM_PROTECTED_OUTPUT_DOES_NOT_HAVE_OPM_SEMANTICS,"The DxgkDdiOPMGetCOPPCompatibleInformation,
-  DxgkDdiOPMGetInformation, or DxgkDdiOPMConfigureProtectedOutput function
+0xC01E051F,STATUS_GRAPHICS_OPM_PROTECTED_OUTPUT_DOES_NOT_HAVE_OPM_SEMANTICS,"The DxgkDdiOPMGetCOPPCompatibleInformation
+  DxgkDdiOPMGetInformation or DxgkDdiOPMConfigureProtectedOutput function
   failed. This error is returned only if a protected output has COPP semantics.
   ","DxgkDdiOPMGetCOPPCompatibleInformation returns this
   error code if the caller requested OPM-specific information.","DxgkDdiOPMGetInformation always returns this error if
@@ -2985,7 +2985,7 @@ File system metadata files"
   timing report and timing message command to get a timing report from a
   monitor."
 0xC01E0587,STATUS_GRAPHICS_DDCCI_INVALID_CAPABILITIES_STRING,"A monitor returned a DDC/CI capabilities string that
-  did not comply with the ACCESS.bus 3.0, DDC/CI 1.1, or MCCS 2 Revision 1
+  did not comply with the ACCESS.bus 3.0 DDC/CI 1.1 or MCCS 2 Revision 1
   specification."
 0xC01E0588,STATUS_GRAPHICS_MCA_INTERNAL_ERROR,An internal error caused an operation to fail.
 0xC01E0589,STATUS_GRAPHICS_DDCCI_INVALID_MESSAGE_COMMAND,"An operation failed because a DDC/CI message had an
@@ -3001,7 +3001,7 @@ File system metadata files"
 0xC01E058D,STATUS_GRAPHICS_MONITOR_NO_LONGER_EXISTS,"The operating system asynchronously destroyed the
   monitor that corresponds to this handle because the operating system's state
   changed. This error typically occurs because the monitor PDO associated with
-  this handle was removed or stopped, or a display mode change occurred. A
+  this handle was removed or stopped or a display mode change occurred. A
   display mode change occurs when Windows sends a WM_DISPLAYCHANGE message to
   applications."
 0xC01E05E0,STATUS_GRAPHICS_ONLY_CONSOLE_SESSION_SUPPORTED,"This function can be used only if a program is running
@@ -3015,8 +3015,8 @@ File system metadata files"
   devices because GDI mirroring display devices do not have any physical monitors
   associated with them."
 0xC01E05E4,STATUS_GRAPHICS_INVALID_POINTER,"The function failed because an invalid pointer
-  parameter was passed to it. A pointer parameter is invalid if it is null, is
-  not correctly aligned, or points to an invalid address or to a kernel mode
+  parameter was passed to it. A pointer parameter is invalid if it is null is
+  not correctly aligned or points to an invalid address or to a kernel mode
   address."
 0xC01E05E5,STATUS_GRAPHICS_NO_MONITORS_CORRESPOND_TO_DISPLAY_DEVICE,"This function failed because the GDI device passed to
   it did not have a monitor associated with it."
@@ -3025,8 +3025,8 @@ File system metadata files"
 0xC01E05E7,STATUS_GRAPHICS_INTERNAL_ERROR,An internal error caused an operation to fail.
 0xC01E05E8,STATUS_GRAPHICS_SESSION_TYPE_CHANGE_IN_PROGRESS,"The function failed because the current session is
   changing its type. This function cannot be called when the current session is
-  changing its type. Three types of sessions currently exist: console,
-  disconnected, and remote (RDP or ICA)."
+  changing its type. Three types of sessions currently exist: console
+  disconnected and remote (RDP or ICA)."
 0xC0210000,STATUS_FVE_LOCKED_VOLUME,The volume must be unlocked before it can be used.
 0xC0210001,STATUS_FVE_NOT_ENCRYPTED,The volume is fully decrypted and no key is available.
 0xC0210002,STATUS_FVE_BAD_INFORMATION,"The control block for the encrypted volume is not
